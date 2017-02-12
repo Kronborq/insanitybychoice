@@ -17,7 +17,7 @@
       	<nav>
         <ul>
           <li><a href="index.html" >Home</a></li>
-          <li><a href="roster.html" class="selected">Team</a></li>
+          <li><a href="roster.html" class="selected">Roster</a></li>
           <li><a href="application.html">Ansøgning</a></li>
           <li><a href="contact.html">Info og Kontakt</a></li>
         </ul>
@@ -37,12 +37,12 @@
     			<img src="img/hunter.png" style="width:100%">
     			<div class="text"><a href="http://eu.battle.net/wow/en/character/tarren-mill/Rhaevens/simple" class="hunter">Rhaevens</a></div>
   			</div>
-  	
+
   			<div class="mySlidesfade">
     			<img src="img/lock.png" style="width:100%">
     			<div class="text"><a href="http://eu.battle.net/wow/en/character/tarren-mill/D%C3%B8tflexin/simple" class="warlock">Døtflexin</a></div>
   			</div>
-  	
+
   			<div class="mySlidesfade">
     			<img src="img/mage.png" style="width:100%">
     			<div class="text"><a href="http://eu.battle.net/wow/en/character/tarren-mill/Pyrolized/simple" class="mage">Pyrolized</a></div>
@@ -52,7 +52,7 @@
     			<img src="img/pala.png" style="width:100%">
     			<div class="text"><a href="http://eu.battle.net/wow/en/character/tarren-mill/Samyi/simple" class="paladin">Snapcake</a></div>
   			</div>
-  	
+
   			<div class="mySlidesfade">
     			<img src="img/monk.png" style="width:100%">
     			<div class="text"><a href="http://eu.battle.net/wow/en/character/tarren-mill/Samyi/simple" class="monk">Samyi</a></div>
@@ -63,13 +63,13 @@
 			<br>
 
 			<div>
-  				<span class="dot" onclick="currentSlide(1)"></span> 
- 				<span class="dot" onclick="currentSlide(2)"></span> 
+  				<span class="dot" onclick="currentSlide(1)"></span>
+ 				<span class="dot" onclick="currentSlide(2)"></span>
   				<span class="dot" onclick="currentSlide(3)"></span>
-  				<span class="dot" onclick="currentSlide(4)"></span> 
- 				<span class="dot" onclick="currentSlide(5)"></span> 
-  				<span class="dot" onclick="currentSlide(6)"></span>  
-  				<span class="dot" onclick="currentSlide(7)"></span> 
+  				<span class="dot" onclick="currentSlide(4)"></span>
+ 				<span class="dot" onclick="currentSlide(5)"></span>
+  				<span class="dot" onclick="currentSlide(6)"></span>
+  				<span class="dot" onclick="currentSlide(7)"></span>
 			</div>
 		<script>
 			var slideIndex = 1;
@@ -87,10 +87,10 @@
   			var i;
   			var slides = document.getElementsByClassName("mySlidesfade");
   			var dots = document.getElementsByClassName("dot");
-  			if (n > slides.length) {slideIndex = 1} 
+  			if (n > slides.length) {slideIndex = 1}
   			if (n < 1) {slideIndex = slides.length}
   			for (i = 0; i < slides.length; i++) {
-      		slides[i].style.display = "none"; 
+      		slides[i].style.display = "none";
   			}
   			for (i = 0; i < dots.length; i++)
   			slides[slideIndex-1].style.display = "block";
