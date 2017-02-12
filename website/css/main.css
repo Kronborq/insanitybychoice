@@ -25,6 +25,26 @@ h3{
   margin 0 0 1em 0;
 }
 
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+h2 span { 
+   color: white; 
+   font: bold 24px/45px Helvetica, Sans-Serif; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
 
 /***************************************
 HEADING
@@ -56,14 +76,6 @@ h2{
   font-weight: normal;
 }
 
-h4{
-  font-family: 'Roboto', sans-serif;
-  margin: 15px 0;
-  font-size: 1.75em;
-  font-weight: normal;
-  line-height: 0.8em;
-  color: #000
-}
 /***************************************
 NAVIGATION
 ***************************************/
@@ -122,7 +134,7 @@ PAGE MAIN
   float: left;
   width: 45%;
   margin: 2.5%;
-  background-color: #fff;
+  background-color: #f5f5f5;
   color: #bdc3c7;
 }
 
@@ -143,28 +155,7 @@ PAGE: APPLICATION
   border-radius: 10px;
 }
 
-/***************************************
-PAGE: ROSTER
-***************************************/
-#container {
-  height: 220px;
-  width: 400px;
-  position: relative;
-}
-#image {
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-#text {
-  z-index: 100;
-  position: absolute;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  left: 20px;
-  top: 140px;
-}
+
 
 /***************************************
 COLORS
@@ -205,3 +196,4 @@ nav a, nav a:visited{
 nav a.selected, nav a:hover{
   color: #32673f;
 }
+
