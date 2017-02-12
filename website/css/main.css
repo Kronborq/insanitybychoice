@@ -1,28 +1,37 @@
 /***************************************
 GENERAL
 ***************************************/
-body{
-  font-family: 'Roboto Condensed', sans-serif;
+body,h3,h2,h1,p{
+  font-family: 'RobotoCondensed-Regular';
 }
-
+* {
+	margin: 0;
+	padding: 0;
+}
+.parallax {
+	background-image: url(img/numbers-01.jpeg);
+	height: 50%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 #wrapper{
   max-width: 940px;
-  margin: 0 auto;
+  margin: auto;
   padding: 0 5%;
-}
-
-a {
-  text-decoration: none;  
 }
 
 img{
   max-width: 100%;
   
 }
-
+p{
+	color:black;
+}
 h3{
-  margin 0 0 1em 0;
+  margin: auto;
 }
 
 .image { 
@@ -39,7 +48,7 @@ h2 {
 
 h2 span { 
    color: white; 
-   font: bold 24px/45px Helvetica, Sans-Serif; 
+   font: bold 24px/45px; 
    letter-spacing: -1px;  
    background: rgb(0, 0, 0); /* fallback color */
    background: rgba(0, 0, 0, 0.7);
@@ -63,7 +72,6 @@ header{
 }
 
 h1{
-  font-family: 'Roboto', sans-serif;
   margin: 15px 0;
   font-size: 1.75em;
   font-weight: normal;
@@ -107,11 +115,17 @@ FOOTER
 ***************************************/
 
 footer{
-  font-size: 0.75em;
-  text-align: center;
-  clear: both;
-  padding-top: 50px;
-  color: #ccc;
+  	font-size: 0.75em;
+  	text-align: center;
+  	clear: both;
+  	padding-top: 2px;
+	padding-bottom: 2px;
+  	color: #ccc;
+	width:100%;
+	position: fixed;
+	bottom:0px;
+	background-color: green;
+	overflow: hidden;
 }
 
 .social-icon{
@@ -184,7 +198,7 @@ a {
 
 /* nav background on mobile */
 nav{
-  background: #599a68;
+  background: #000000;
 }
 
 /* nav link */
@@ -194,6 +208,92 @@ nav a, nav a:visited{
 
 /* selected nav link*/
 nav a.selected, nav a:hover{
-  color: #32673f;
+  color: #494949;
+}
+main {
+	max-width: 100%;
 }
 
+/***************************************
+Slideshow for roster
+***************************************/
+/* Slideshow container */
+.slideshow-container{
+	width: 1000px;
+  	position: absolute;
+	top: 20%;
+	left: 25%;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 55%;
+  width: 50px;
+  padding: 4px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 0px 0 0 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.druid, .rogue, .hunter, .warlock, .mage, .paladin, .monk{
+ 	font-size: 25px;
+ 	padding: 8px 12px;
+  	position: absolute;
+  	bottom: 8px;
+  	width: 100%;
+  	text-align: center;
+}
+.druid{
+	color: #536094;
+}
+.rogue{
+	color: #274A29
+}
+.hunter{
+	color: #F77300;
+}
+.warlock{
+	color: #C11316;
+}
+.mage{
+	color: #908CED;
+}
+.paladin{
+	color: #F5A207;
+}
+.monk{
+	color: #749064;
+}
+
+/* Fading animation */
+.fade {
+  	-webkit-animation-name: fade;
+  	-webkit-animation-duration: 1.5s;
+  	animation-name: fade;
+  	animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
+
+@keyframes fade {
+  	from {opacity: .4} 
+  	to {opacity: 1}
+}
