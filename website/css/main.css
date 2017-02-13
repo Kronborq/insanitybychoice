@@ -17,7 +17,7 @@ body{
 	padding: 0;
 }
 .parallax{
-	background-image: url("../img/legion.jpg");
+	background-image: url("img/legion.jpg");
     /* Set a specific height */
     height: 1920px; 
 
