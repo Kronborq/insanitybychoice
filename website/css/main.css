@@ -2,7 +2,7 @@
 GENERAL
 ***************************************/
 body,h3,h2,h1,p{
-  font-family: 'RobotoCondensed-Regular';
+  font-family: 'Open Sans', sans-serif;
 }
 body, html{
 	height: 100%;
