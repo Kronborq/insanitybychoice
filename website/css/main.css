@@ -4,28 +4,41 @@ GENERAL
 body,h3,h2,h1,p{
   font-family: 'RobotoCondensed-Regular';
 }
+body, html{
+	height: 100%;
+}
+/* site body */
+body{
+  background-color: #fff;
+  color: #999;
+}
 * {
 	margin: 0;
 	padding: 0;
 }
-.parallax {
-	background-image: url(img/numbers-01.jpeg);
-	height: 50%;
+.parallax{
+	background-image: url("../img/legion.jpg");
+    /* Set a specific height */
+    height: 1920px; 
+
+    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 #wrapper{
-  max-width: 940px;
-  margin: auto;
-  padding: 0 5%;
+	height: 1750px;
+  	max-width: 750px;
+  	margin: auto;
+	position: static;
+  	padding: 5% 5%;
+	background-color: #2E2E2E;
 }
 
 img{
   max-width: 100%;
-
+  
 }
 p{
 	color:black;
@@ -34,15 +47,37 @@ h3{
   margin: auto;
 }
 
+.image { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+h2 { 
+   position: absolute; 
+   top: 200px; 
+   left: 0; 
+   width: 100%; 
+}
+
+h2 span { 
+   color: white; 
+   font: bold 24px/45px; 
+   letter-spacing: -1px;  
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px; 
+}
 
 /***************************************
 HEADING
 ***************************************/
 header{
-  float: left;
-  margin: 0 0 30px 0;
-  padding: 5px 0 0 0;
-  width: 100%;
+  	float: left;
+  	margin: 0 0 30px 0;
+ 	padding: 5px 0 0 0;
+ 	width: 100%;
+	background: #6ab47b;
+  	border-color: #599a68;
 }
 
 
@@ -87,25 +122,28 @@ nav li {
 nav a{
   font-weight: 800;
   padding: 15px 10px;
-
+  
 }
 
 /***************************************
 FOOTER
 ***************************************/
 
-footer{
+footer, .footer2{
   	font-size: 0.75em;
   	text-align: center;
   	clear: both;
-  	padding-top: 2px;
-	padding-bottom: 2px;
+  	padding-top: 1px;
+	padding-bottom: 1px;
   	color: #ccc;
 	width:100%;
-	position: fixed;
 	bottom:0px;
-	background-color: green;
+	background-color: #2E2E2E;
 	overflow: hidden;
+}
+.footer2{
+	position: absolute;
+	background-color: #2E2E2E;
 }
 
 .social-icon{
@@ -128,13 +166,12 @@ PAGE MAIN
   float: left;
   width: 45%;
   margin: 2.5%;
-  background-color: #f5f5f5;
-  color: #bdc3c7;
+  background-color: #000000;
 }
 
 #gallery li a p {
   margin: 0;
-  padding: 5%;
+  padding: 1%;
   font-size: 0.75em;
   color: #bdc3c7;
 }
@@ -154,18 +191,6 @@ PAGE: APPLICATION
 /***************************************
 COLORS
 ***************************************/
-
-/* site body */
-body{
-  background-color: #fff;
-  color: #999;
-}
-
-/* green header */
-header{
-  background: #6ab47b;
-  border-color: #599a68;
-}
 /* logo text */
 h1, h2{
   color: #fff
@@ -178,7 +203,7 @@ a {
 
 /* nav background on mobile */
 nav{
-  background: #000000;
+  background: #2E2E2E;
 }
 
 /* nav link */
@@ -234,7 +259,8 @@ Slideshow for roster
  	font-size: 25px;
  	padding: 8px 12px;
   	position: absolute;
-  	bottom: 8px;
+  	bottom: 450px;
+	right: 350px;
   	width: 100%;
   	text-align: center;
 }
@@ -269,11 +295,11 @@ Slideshow for roster
 }
 
 @-webkit-keyframes fade {
-  	from {opacity: .4}
+  	from {opacity: .4} 
   	to {opacity: 1}
 }
 
 @keyframes fade {
-  	from {opacity: .4}
+  	from {opacity: .4} 
   	to {opacity: 1}
 }
