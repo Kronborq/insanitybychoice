@@ -202,7 +202,7 @@ PAGE MAIN
 	max-width: 440px;
 	display: inline-block;
     padding:20px;
-	margin-left: 3%;
+	margin-left: auto;
 	margin-right: auto;
 }
 .dps{
@@ -240,8 +240,8 @@ PAGE MAIN
 	font-size: 1.75em;
   	font-weight: normal;
 	text-align: center;
-	margin-left:0%;
-	margin-right: 0%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .rosterimg {
