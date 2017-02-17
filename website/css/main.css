@@ -177,65 +177,144 @@ FOOTER
 PAGE MAIN
 ***************************************/
 
-.tanks{
-	height: 350px;
-	max-width: 1250px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-.tanks2{
-	height: 300px;
-	max-width: 600px;
-	display: inline-block;
-    padding:25px;
-	margin-left: 12.5%;
-	margin-right: 5%;
-}
-.healers{
-	height: 350px;
-	max-width: 1350px;
-	text-align:center;
-}
-.healers2{
-  float: center;
+.tankd{;
   width: 350px;
   height: 100%;
   margin: 10px;
-  border: 3px solid #73AD21;
+  margin-left: 114.5%;
+  border: 3px solid #FF7D0A;
 }
-.dps{
-	height: 350px;
-	max-width: 1550px;
-	text-align:center;
+
+.tankw{;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  margin-left: 114.5%;
+  border: 3px solid #C79C6E;
 }
-.dps2{
-	height: 250px;
-	max-width: 450px;
-	display: inline-block;
-    padding:15px;
-	margin-left: 4.5%;
-	margin-right: 0.5%;
+/*****************************************
+ROSTER CLASSES
+*****************************************/
+
+.druidb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #FF7D0A;
 }
+
+.warriorb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #C79C6E;
+}
+
+.paladinb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #F58CBA;
+}
+
+.priestb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #FFF;
+}
+
+.dhb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #A330C9;
+}
+
+.dkb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #C41F3B;
+}
+
+.hunterb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #ABD473;
+}
+
+.mageb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #69CCF0;
+}
+
+.monkb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #00FF96;
+}
+
+.rogueb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #FFF569;
+}
+
+.lockb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #9482C9;
+}
+
+.shamanb{
+  float: right;
+  width: 350px;
+  height: 100%;
+  margin: 10px;
+  border: 3px solid #0070DE;
+}
+
+/*************************
+DIVIDERS
+*************************/
+
 .hr{
-	border: 0;
-    height: auto;
-	  width: auto;
+	  border: 0;
+    height: 10px;
     margin-left: auto;
-    margin-right: auto;
-    border-top: 2.5px solid rgba(191, 63, 63, 0.2);
-    border-bottom: 2.5px solid rgba(191, 63, 63, 0.2);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(1, 1, 1, 1), rgba(0, 0, 0, 0));
+  	margin-right: auto;
+	  width: 46%;
+    border-top: 2.5px solid rgba(191, 63, 63, 0.5);
+    border-bottom: 2.5px solid rgba(191, 63, 63, 0.5);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(1, 1, 1, 1), rgba(0, 0, 0, 0.2));
 }
 .hr2{
 	  border: 0;
     height: 10px;
     margin-left: auto;
   	margin-right: auto;
-	  width: 100%;
-    border-top: 2.5px solid rgba(191, 63, 63, 0.2);
-    border-bottom: 2.5px solid rgba(191, 63, 63, 0.2);
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(1, 1, 1, 1), rgba(0, 0, 0, 0));
+	  width: 95%;
+    border-top: 2.5px solid rgba(191, 63, 63, 0.5);
+    border-bottom: 2.5px solid rgba(191, 63, 63, 0.5);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(1, 1, 1, 1), rgba(0, 0, 0, 0.2));
 }
 .Roster{
   position: center;
@@ -256,8 +335,8 @@ PAGE MAIN
   padding: 0 2px;
   display: inline-block; /* This can be inline too */
   position: absolute;
-  bottom: 9%;
-  left: 3.8%;
+  bottom: 8%;
+  left: 14%;
   width: 60%;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0);
@@ -267,6 +346,23 @@ PAGE MAIN
   font-weight: 700;
   color: #FFF;
 }
+.rosterimg .data2 {
+  padding: 0 2px;
+  display: inline-block; /* This can be inline too */
+  position: absolute;
+  bottom: 8%;
+  left: 116%;
+  width: 60%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: 1.1vw;
+  font-family: 'Open Sans',sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  color: #FFF;
+}
+
+
 #gallery {
   margin: 0;
   padding: 0;
