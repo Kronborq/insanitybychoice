@@ -426,3 +426,9 @@ Slideshow for roster
   	from {opacity: .4}
   	to {opacity: 1}
 }
+
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
