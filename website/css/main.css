@@ -161,8 +161,8 @@ FOOTER
 	display: block;
 }
 .social-icon{
-  width: 15%;
-  height: 15%;
+  width: 10%;
+  height: 10%;
   margin: 0 5px;
 }
 
@@ -258,7 +258,7 @@ PAGE MAIN
   position: absolute;
   bottom: 13%;
   left: 5%;
-  width: 40%;
+  width: 60%;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0);
   font-size: 1.1vw;
