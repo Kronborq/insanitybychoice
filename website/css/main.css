@@ -490,7 +490,7 @@ h2, h4, h5{
 }
 /* links */
 a {
-  outline: none;
+  outline: none !important;
   color: #1e6829;
 }
 
