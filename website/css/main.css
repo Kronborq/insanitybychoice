@@ -43,12 +43,15 @@ body{
   	padding: 2.5% 5%;
 }
 #wrapper2{
-	background-color: #8c8a8a;
-	height: 1280px;
-  	max-width: 950px;
+  height: 720px;
+  	max-width: 1250px;
   	margin: auto;
 	position: static;
   	padding: 5% 5%;
+	background-color: black;
+	background-image: url(../img/fel.jpg);
+	background-position: 50% 50%;
+	border-radius: 25px;
 }
 #wrapper3{
 	height: 550px;
@@ -59,7 +62,7 @@ body{
 	background-color: black;
 }
 #wrapper4{
-	height: 750px;
+	height: 2150px;
   	max-width: 1250px;
   	margin: auto;
 	position: static;
@@ -80,18 +83,41 @@ body{
 	background-position: 50% 50%;
 	border-radius: 25px;
 }
+
+#wrapper6{
+	height: 700px;
+  	max-width: 1250px;
+  	margin: auto;
+	position: static;
+  	padding: 5% 5%;
+	background-color: black;
+	background-image: url(../img/fel.jpg);
+	background-position: 50% 50%;
+	border-radius: 25px;
+}
 #forsideoverskrift{
 	text-align: center;
 }
 #forsidetekst{
 	color:white;
+  background-color: rgba(0,0,0,0);
 	text-align: center;
+}
+#forsidetekst2{
+	color:white;
+  background-color: rgba(0,0,0,0);
+	text-align: left;
 }
 .notgrey{
 	color:white;
 	text-align: center;
 }
 
+.notgrey2{
+	color:white;
+  text-indent: 25%;
+	text-align: left;
+}
 img{
   max-width: 100%;
 
@@ -120,7 +146,7 @@ h2{
   margin: 0 0 -20px;
   font-size: 1.25em;
   font-weight: normal;
-  text-indent: 4%;
+  text-indent: -2%;
 }
 
 h4{
@@ -206,15 +232,14 @@ FOOTER
 	display: block;
 }
 .social-icon{
-  width: 10%;
-  height: 10%;
-  margin: 0 5px;
+	height: 25px;
+	width: 25px;
+  margin: 10px 0 -3px 2.5px;
 }
 
 .social-icon2{
-  width: 30px;
-  height: 25px;
-  margin: 0 5px;
+	height: 25px;
+	width: 25px;
   background-color: #fff;
 }
 
@@ -224,10 +249,11 @@ PAGE MAIN
 #spec{
 	height: 25px;
 	width: 25px;
+	margin: 10px 0 -3px 10px;
 }
 .tankd{;
   width: 350px;
-  height: 100%;
+  height: 200px;
   margin: 10px;
   margin-left: 114.5%;
   border: 3px solid #FF7D0A;
@@ -236,10 +262,11 @@ PAGE MAIN
 
 .tankw{;
   width: 350px;
-  height: 100%;
+  height: 200px;
   margin: 10px;
   margin-left: 114.5%;
-  border: 3px solid #C79C6E;
+  border: 3px solid;
+  border-color: #C79C6E;
 	border-radius: 15px;
 }
 /*****************************************
@@ -343,7 +370,7 @@ ROSTER CLASSES
   margin: 10px;
   border: 3px solid #9482C9;
 	border-radius: 15px;
-	
+
 }
 
 .shamanb{
@@ -405,23 +432,39 @@ DIVIDERS
   	font-weight: normal;
 	text-align: center;
 }
-
 .rosterimg {
   position: relative;
-  width: 24%;
+  width: 20%;
   display: inline-block; /* This can be inline too */
-  margin: 0 0 2%;
+  margin: 0 auto;
   padding: 0px;
-	
+  margin-left: 5%;
+  margin-right: -2%;
 }
-
-.rosterimg .data {
+.rosterimgtanks{
+	width: 23%;
+	position: relative;
+  display: inline-block; /* This can be inline too */
+  margin: 0 auto;
+  margin-left: -10%;
+  margin-right: 5%;
+  padding: 0px;
+}
+.rosterimgtanks2{
+	width: 23%;
+	position: relative;
+  display: inline-block; /* This can be inline too */
+  margin: 0 auto;
+	margin-left: 15%;
+  padding: 0px;
+}
+.data {
   padding: 0 2px;
   display: inline-block; /* This can be inline too */
   position: absolute;
   bottom: 8%;
-  left: 14%;
-  width: 60%;
+  left: -1%;
+  width: 80%;
   box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0);
   font-size: 1.1vw;
@@ -429,9 +472,9 @@ DIVIDERS
   font-style: normal;
   font-weight: 700;
   color: #FFF;
-	
+
 }
-.rosterimg .data2 {
+.data2 {
   padding: 0 2px;
   display: inline-block; /* This can be inline too */
   position: absolute;
@@ -481,11 +524,11 @@ PAGE: APPLICATION
 COLORS
 ***************************************/
 /* logo text */
-h1{
+h1, h2 {
   color: #fff
 }
 
-h2, h4, h5{
+h4, h5{
   color: #000
 }
 /* links */
